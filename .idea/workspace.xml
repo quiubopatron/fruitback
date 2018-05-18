@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49a81dca-05df-4d48-8547-fb3b087559db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="49a81dca-05df-4d48-8547-fb3b087559db" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FruitRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FruitRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/es/sm2/rookieproyect/dao/FruitRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -102,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RookieController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RookieController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/es/sm2/rookieproyect/controller/RookieController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -293,6 +291,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rookieproyect" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fase1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fase1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rookieproyect" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fase1" type="b2602c69:ProjectViewProjectNode" />
@@ -623,7 +631,7 @@
       <workItem from="1526369746915" duration="1834000" />
       <workItem from="1526453887388" duration="1817000" />
       <workItem from="1526540089283" duration="644000" />
-      <workItem from="1526626489756" duration="1404000" />
+      <workItem from="1526626489756" duration="1680000" />
     </task>
     <servers />
   </component>
@@ -660,7 +668,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29627000" />
+    <option name="totallyTimeSpent" value="29903000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,6 +681,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32972974" />
@@ -1094,13 +1103,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/sm2/rookieproyect/dao/FruitRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/sm2/rookieproyect/dao/jdbc/FruitDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1147,6 +1149,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/sm2/rookieproyect/dao/FruitRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
         </state>
       </provider>
     </entry>
