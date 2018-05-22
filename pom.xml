@@ -19,6 +19,7 @@
     <properties>
         <java.version>1.8</java.version>
         <liquibase-plugin.version>3.5.1</liquibase-plugin.version>
+        <jacoco-maven-plugin.version>0.7.9</jacoco-maven-plugin.version>
     </properties>
 
     <dependencies>
@@ -90,7 +91,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
-
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
@@ -99,6 +99,7 @@
                     </excludes>
                 </configuration>
             </plugin>
+
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <executions>
@@ -125,6 +126,58 @@
                     <!--<propertyFile>src/main/resources/liquibase/properties/liquibase.properties</propertyFile>-->
                 <!--</configuration>-->
             <!--</plugin>-->
+
+
+            <!-- Jacoco plugin to collect testing coverage -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${project.basedir}/target/jacoco.exec</destFile>
+                            <output>file</output>
+                            <append>true</append>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>prepare-agent-integration</id>
+                        <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${project.basedir}/target/jacoco.exec</destFile>
+                            <output>file</output>
+                            <append>true</append>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>${project.basedir}/target/jacoco.exec</dataFile>
+                            <outputDirectory>${project.basedir}/target/jacoco</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>report-integration</id>
+                        <goals>
+                            <goal>report-integration</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>${project.basedir}/target/jacoco.exec</dataFile>
+                            <outputDirectory>${project.basedir}/target/jacoco-it</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 
         </plugins>
     </build>

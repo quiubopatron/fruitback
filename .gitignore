@@ -54,3 +54,7 @@ nb-configuration.xml
 release.properties
 pom.xml.releaseBackup
 pom.xml.tag
+
+# Sonar
+.scannerwork/
+bash.exe.stackdump

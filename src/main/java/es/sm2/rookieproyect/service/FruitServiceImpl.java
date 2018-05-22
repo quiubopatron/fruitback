@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -73,8 +72,7 @@ public class FruitServiceImpl implements FruitService{
         List<Fruit> fruitList = fruitRepository.findAll();
 
         return fruitList.stream().map(
-                (f) -> fruitConverter.toModelDto(f))
+                fruitConverter::toModelDto)
                 .collect(Collectors.toList());
-
     }
 }

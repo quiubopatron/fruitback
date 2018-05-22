@@ -24,9 +24,6 @@ public class Fruit {
     @Column(name = "date_created")
     private LocalDateTime dateCreated;
 
-    public Fruit() {
-    }
-
     public Long getIdFruit() {
         return idFruit;
     }
