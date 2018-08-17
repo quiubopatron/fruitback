@@ -12,13 +12,13 @@ public class Fruit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idFruit;
 
-    @Column(name = "name", columnDefinition = "varchar2(50)", nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "description", columnDefinition = "varchar2(256)")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "price_per_kg", columnDefinition = "number 4.2", nullable = false)
+    @Column(name = "price_per_kg", nullable = false)
     private Integer pricePerKg;
 
     @Column(name = "date_created")
